@@ -1,0 +1,104 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    text-transform: uppercase;
+}
+
+html {
+    --text-color: white;
+}
+
+header::before {
+    content: '';
+    position: absolute;
+    background: url(tt.jpg);
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-size: cover;
+    z-index: -1;
+    opacity: 0.9;
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100px;
+}
+
+.left-nav {
+    width: 20%;
+    line-height: 100px;
+    color: var(--text-color);
+    font-weight: 900;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 17px;
+    float: left;
+    padding-left: 40px;
+}
+
+.right-nav {
+    width: 70%;
+    height: 100px;
+    line-height: 100px;
+    float: right;
+}
+
+.right-nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin-left: 20px;
+}
+
+.right-nav ul li a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 20px;
+    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
+    margin: 12px;
+}
+
+#first-nav a {
+    color: orangered;
+}
+
+.right-nav a:hover {
+    color: orangered;
+}
+
+.text {
+    text-align: center;
+    margin-top: 200px;
+    color: var(--text-color);
+    font-family: 'Montserrat', sans-serif;
+}
+
+.text h1 {
+    margin: 20px 0px 20px 0px;
+    font-weight: 900;
+    font-size: 68px;
+}
+
+.text input {
+    font-family: 'Montserrat', sans-serif;
+    border: 2px solid white;
+    margin: 11px;
+    padding: 12px;
+    border-radius: 3px;
+    color: black;
+    font-weight: bold;
+    font-size: 11px;
+    cursor: pointer;
+}
+
+#buttontwo {
+    background-color: transparent;
+    /* border: none; */
+}
+
+#buttontwo:hover {
+    border: 2px solid orangered
+}
